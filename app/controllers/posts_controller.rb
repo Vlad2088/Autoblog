@@ -33,6 +33,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
+    redirect_to posts_path, notice: 'TEXT IN LOCAL'
   end
 
   private
